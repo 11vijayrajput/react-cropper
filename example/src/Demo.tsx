@@ -37,6 +37,26 @@ export const Demo: React.FC = () => {
                 <button>Use default img</button>
                 <br />
                 <br />
+                <input
+          type="text"
+          placeholder="W"
+          name="width"
+          value={a}
+          onChange={(e) => {
+            setA(Number(e.target.value));
+            //setWidth(Number(e.target.value));
+          }}
+        />
+        <input
+          type="text"
+          placeholder="H"
+          name="height"
+          value={b}
+          onChange={(e) => {
+            setB(Number(e.target.value));
+            //setHeight(Number(e.target.value));
+          }}
+        />
                 <Cropper
                     style={{height: 400, width: '100%'}}
                     initialAspectRatio={16 / 9}
